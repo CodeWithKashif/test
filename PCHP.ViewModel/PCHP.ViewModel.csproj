@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFB5687D-6977-4D00-A285-163CC588A154}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PCHP.ViewModel</RootNamespace>
+    <AssemblyName>PCHP.ViewModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdditionalAssessmentScoreVm.cs" />
+    <Compile Include="AdditionalAssessmentTestViewModel.cs" />
+    <Compile Include="AddressVm.cs" />
+    <Compile Include="AddResult.cs" />
+    <Compile Include="ApiResult.cs" />
+    <Compile Include="ChildCoreFormsViewModel.cs" />
+    <Compile Include="ChildFormsQuestionnaireViewModel.cs" />
+    <Compile Include="ChangePasswordViewModel.cs" />
+    <Compile Include="ChildAddUpdate.cs" />
+    <Compile Include="ChildCoreFormsDetailViewModel.cs" />
+    <Compile Include="ChildElsScheduleDetailVm.cs" />
+    <Compile Include="ChildElsSchedulesViewModel.cs" />
+    <Compile Include="ChildPostProgramViewModel.cs" />
+    <Compile Include="ChildReferralStatusLogViewModel.cs" />
+    <Compile Include="ChildReferralViewModel.cs" />
+    <Compile Include="AnnouncementAddUpdate.cs" />
+    <Compile Include="AudienceVm.cs" />
+    <Compile Include="AudienceValueVm.cs" />
+    <Compile Include="CosMonthlyListExcelResultVm.cs" />
+    <Compile Include="DropDownMangementVM.cs" />
+    <Compile Include="ExcelExportFilterVm.cs" />
+    <Compile Include="FileDownloadViewModel.cs" />
+    <Compile Include="MasterDataVM.cs" />
+    <Compile Include="NotificationVm.cs" />
+    <Compile Include="GlossaryAddUpdate.cs" />
+    <Compile Include="PaperFormsAddUpdate.cs" />
+    <Compile Include="NotesAddUpdate.cs" />
+    <Compile Include="PostProgramListExcelResultVm.cs" />
+    <Compile Include="PowerBiIntegrationResult.cs" />
+    <Compile Include="ProviderCisFormAddUpdate.cs" />
+    <Compile Include="ProviderCisFormLogicAddUpdate.cs" />
+    <Compile Include="DocumentLogsViewModel.cs" />
+    <Compile Include="ElsScheduleManagmentGridResult.cs" />
+    <Compile Include="FccChildAddUpdate.cs" />
+    <Compile Include="FccChildSearchRequest.cs" />
+    <Compile Include="ProviderDemographicAddUpdate.cs" />
+    <Compile Include="ProviderFormsAddUpdate.cs" />
+    <Compile Include="ProviderFormsSearchRequest.cs" />
+    <Compile Include="ProviderInfoVm.cs" />
+    <Compile Include="ProviderScheduleObservationAddUpdate.cs" />
+    <Compile Include="ProviderSearchRequest.cs" />
+    <Compile Include="ProviderStaffProgramYearBridgeViewModel.cs" />
+    <Compile Include="ProviderStaffViewModel.cs" />
+    <Compile Include="ProviderViewModel.cs" />
+    <Compile Include="ProviderAddUpdate.cs" />
+    <Compile Include="SiteCoreGraduationViewModel.cs" />
+    <Compile Include="SiteReferenceDocumentViewModel.cs" />
+    <Compile Include="EmailVm.cs" />
+    <Compile Include="GridResult.cs" />
+    <Compile Include="IdNameFormatVM.cs" />
+    <Compile Include="LoginResult.cs" />
+    <Compile Include="PhoneVm.cs" />
+    <Compile Include="CustomerVm.cs" />
+    <Compile Include="RegionSiteDetailVm.cs" />
+    <Compile Include="SiteAgencyContactViewModel.cs" />
+    <Compile Include="SiteAgencyViewModel.cs" />
+    <Compile Include="SiteAnnualRequirementDocumentViewModel.cs" />
+    <Compile Include="SiteOutreachViewModel.cs" />
+    <Compile Include="SitePrograms.cs" />
+    <Compile Include="SiteRegionBridgeVm.cs" />
+    <Compile Include="SiteSocialNetworkVm.cs" />
+    <Compile Include="SiteStaffGridResultVm.cs" />
+    <Compile Include="SiteViewModel.cs" />
+    <Compile Include="RegionViewModel.cs" />
+    <Compile Include="Site\Certification\SiteCertificationViewModel.cs" />
+    <Compile Include="TGridResultViewModel.cs" />
+    <Compile Include="UpdatePasswordByTokenViewModel.cs" />
+    <Compile Include="VismScheduleDetail.cs" />
+    <Compile Include="VismScheduleGridResultVm.cs" />
+    <Compile Include="TrainingViewModel.cs" />
+    <Compile Include="VismViewModel.cs" />
+    <Compile Include="ProgramYearViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Results\StaffGridResult.cs" />
+    <Compile Include="RoleVm.cs" />
+    <Compile Include="StaffSearchRequest.cs" />
+    <Compile Include="SiteVm.cs" />
+    <Compile Include="StaffDemographichVm.cs" />
+    <Compile Include="StaffVm.cs" />
+    <Compile Include="UserRoleBridgeVM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PCHP.Core\PCHP.Core.csproj">
+      <Project>{337DAE2A-04F8-4A9E-A0A3-CBB1F48A62F1}</Project>
+      <Name>PCHP.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

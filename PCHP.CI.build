@@ -1,0 +1,44 @@
+﻿<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0" DefaultTargets="Compile" >
+
+  <ItemGroup>
+    <BuildArtifacts Include=".\BuildArtifacts" />
+    <SolutionFile Include=".\PCHP.sln" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <NUnit Include=".\packages\NUnit.ConsoleRunner.3.7.0\tools\nunit3-console.exe" />
+    --><!--<TestAssembly Include=".\BuildArtifacts\PCHP.Domain.IntegrationTest.dll" />--><!--
+    <TestAssembly Include=".\PCHP.Domain.IntegrationTest\bin\Debug\PCHP.Domain.IntegrationTest.dll" />
+    --><!--<TestResults Include=".\BuildArtifacts\TestResults.xml" />--><!--
+  </ItemGroup>
+    
+  <Target Name="Clean">
+    <Message Text="cleaning......" />
+    <RemoveDir Directories="@(BuildArtifacts)" />
+  </Target>
+
+  <Target Name="Init" DependsOnTargets="Clean">
+    <MakeDir Directories="@(BuildArtifacts)" />
+  </Target>
+
+  <Target Name="Compile" >
+    <Message Text="Building PCHP......" />
+    --><!--<MSBuild Projects=".\PCHP.sln" Targets="Rebuild" Properties="OutDir=E:\DEVELOPMENT\Icreon\PCHP\Api\BuildArtifacts\"   />--><!--<MSBuild Projects=".\PCHP.sln" Targets="Rebuild" Properties="OutDir=E:\DEVELOPMENT\Icreon\PCHP\Api\BuildArtifacts\"   />--><!--
+    <MSBuild Projects="@(SolutionFile)" Targets="Rebuild" />
+  </Target>
+
+
+  <Target Name="Test" DependsOnTargets="Compile">
+    <Message Text="*********Running PCHP Integration Tests Started*********" />
+    <Message Text="********************************************************" />
+    --><!--<Exec Command="@(NUnit) @(TestAssembly) /xml=@(TestResults)" />--><!--
+    <Exec Command="@(NUnit) @(TestAssembly)" />
+  </Target>
+  
+</Project>-->
+
+
+<!--E:\DEVELOPMENT\Icreon\PCHP\Api>msbuild HelloCI.build /target:Compile-->
+
+<!--E:\DEVELOPMENT\Icreon\PCHP\Api>msbuild HelloCI.build -->
